@@ -1,0 +1,97 @@
+#update_popup_window{
+	
+	background:url(../images/update_popup_512x200.png) no-repeat;
+
+	height:200px;
+
+	width:512px;
+	
+	position:absolute;
+	
+	top:284px;
+	
+	left:256px;
+}
+
+#update_popup_header{
+	height:100px;
+	width:512px;
+/*	background:url(../images/update_popup_header_bg.png) no-repeat;*/
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	font-size:32px;
+	color:#FFFFFF;
+	line-height:100%;
+}
+
+#update_popup_header_text{
+	height:80px;
+        width:500px;
+        margin-left:15px;
+        padding-top:15px;
+        position:absolute;
+}
+
+#button_col_update_confirm{
+	margin-top:110;
+	
+	
+}
+
+#button_col_update_confirm a{
+	color:#FFF;
+	font-size:22px;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:normal;
+}
+
+#update_confirm_button_div{
+	float:left;
+/*        margin-right:32px;*/
+	margin-left:120px;
+	text-align:center;
+}
+
+#update_cancel_button_div{
+	float:left;
+	margin-left:300px;
+	text-align:center;
+}
+
+#update_confirm_button_text{
+	 height:40px;
+       	 width:100px;
+      	 margin-left:10px;
+         padding-top:15px;
+         position:absolute;
+}
+
+#update_cancel_button_text{
+	height:40px;
+        width:100px;
+        margin-left:10px;
+        padding-top:15px;
+        position:absolute;
+}
+
+.update_confirm_button{
+	background:url(../images/background_set_120x60_normal.png) no-repeat;
+}
+
+.update_confirm_button:active{
+	background:url(../images/background_set_120x60_pressed.png) no-repeat;
+}
+
+.update_cancel_button{
+	background:url(../images/background_set_120x60_normal.png) no-repeat;
+}
+
+.update_cancel_button:active{
+	background:url(../images/background_set_120x60_pressed.png) no-repeat;
+}
+
+.update_button_bg_dis {
+	display:block;
+	height:60px;
+	width:120px;
+}

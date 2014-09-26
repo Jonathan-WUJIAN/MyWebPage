@@ -1,0 +1,66 @@
+*{margin:0;padding:0;}
+#screen_browser {
+
+	background:url(../images/gen_bg_CloudPlayer2.png) no-repeat;
+
+	height:768px;
+
+	width:1024px;
+
+}
+
+#backgroundListContainer{
+	z-index: 2;
+}
+
+#shadowBackground{
+	z-index: 3;
+}
+
+
+.shadowLayer {
+
+	width: 1000px;
+
+	height: 508px;
+
+	position: absolute;
+
+	
+
+	margin-left: 4px;
+
+	margin-top: 5px;
+
+	
+
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.79) 68%, rgba(0,0,0,0.79) 70%); /* FF3.6+ */
+
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.18)), color-stop(68%,rgba(0,0,0,0.79)), color-stop(70%,rgba(0,0,0,0.79))); /* Chrome,Safari4+ */
+
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.18) 0%,rgba(0,0,0,0.79) 68%,rgba(0,0,0,0.79) 70%); /* Chrome10+,Safari5.1+ */
+
+	background: -o-linear-gradient(left,  rgba(0,0,0,0.18) 0%,rgba(0,0,0,0.79) 68%,rgba(0,0,0,0.79) 70%); /* Opera 11.10+ */
+
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0.18) 0%,rgba(0,0,0,0.79) 68%,rgba(0,0,0,0.79) 70%); /* IE10+ */
+
+	background: linear-gradient(to right,  rgba(0,0,0,0.18) 0%,rgba(0,0,0,0.79) 68%,rgba(0,0,0,0.79) 70%); /* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e000000', endColorstr='#c9000000',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+/*uidj4527 realize it later*/
+#backgroundListHeader{
+	height:85px;
+	width:1000px;
+	background:url(../images/gen_list_header_bg_new.png) no-repeat;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	font-size:42px;
+	color:#FFFFFF;
+	line-height:200%;
+}
+
+

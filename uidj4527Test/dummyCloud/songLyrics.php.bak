@@ -1,0 +1,20 @@
+﻿<?php
+//$userid=$_GET["userid"];
+define ( 'HTTP',   'http://' );
+define ( 'PATH',   '/music/' );
+//if($userid == 'uidj4527')
+//{
+//	$myfile = fopen("http://wujian1404.hostfreeweb.net/dummyCloud/music/place_mp3_files_here.txt", "r") or die("Unable to open file!");
+//	echo fgets($myfile);
+//	$mystring=HTTP.$_SERVER['SERVER_NAME'].PATH.'place_mp3_files_here.txt';
+//	echo $mystring;
+//	echo readfile($mystring);
+		$myfile = readfile("Adele-Set Fire To The Rain.lrc");
+		echo $myfile;
+//	fclose($myfile);
+//}
+//else
+//{
+//	$myfile = "wrong content"; 
+//}
+?>

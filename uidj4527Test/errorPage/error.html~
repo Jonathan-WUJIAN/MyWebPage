@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>HTML5 Cloudplayer</title>
+ <meta charset="utf-8">
+ <link href="css/styles.css" rel="stylesheet" type="text/css" />
+ <script src="js/jquery-1.7.2.min.js"></script>			  <!-- THE Javascript framework          -->
+ <script src="js/demo.js"></script>				  <!-- code for the main screen          -->
+</head>
+
+<body>
+
+<div id="main_wrapper">
+
+	<!-- ********************************************************* -->
+    <!-- ****************** Error message SCREEN ***************** --> 
+    <!-- ********************************************************* -->
+	<div id="screen_loadFailed">   
+	 	<header id="statusbar">  
+        </header>
+        
+        <div id="button_home_div"> <a class="button_home home_normal_state" onClick="back_clicked();">Back</a></div>
+        
+        <div id="loadFailed_div">
+        <!-- uidj4527 test
+                <a href="http://212.77.190.201/cloudplayerNewHMI/mediaplayer/index.html"><span id="loadFailed_text_haupt">Error loading the player. Press to reload...</span></a></br>
+         -->
+
+         <!--    <a href="ftp:///usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/index.html"><span id="loadFailed_text_haupt">Error loading the player. Please try again ...</span></a>-->
+         <!--
+                <a href="file:///usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527_test.html"><span id="loadFailed_text_haupt">Error loading the player. Please try again ...</span></a>
+         -->
+		 <a href="http://jonathan-joanna.herobo.com/index.html"><span id="loadFailed_text_haupt">Error loading the player. Please try again ...</span></a>
+        </div>
+      
+     </div>
+    <!-- ***************** Error message SCREEN END *************** --> 
+    
+ 
+</div>    
+</body>
+</html>

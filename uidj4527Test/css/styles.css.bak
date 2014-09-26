@@ -1,0 +1,1139 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#main_wrapper {
+	height:768px;
+	width:1024px;
+	background:#000000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: block;
+	overflow-x: visible;
+	overflow-y: visible;
+	top: 0;
+	left: 0;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica,Arial,sans-serif;
+	scrollbar-base-color:red;
+}
+
+#screen_login {
+	width: 70%;
+	height: 70%;
+	position: fixed;
+	background-color: red;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	margin-top: -35%;
+	margin-left: -35%;
+}
+
+body {
+	margin: 0px;
+	scrollbar-base-color:red;
+}
+/*uidj4527 scroll bar style*/
+
+
+::-webkit-scrollbar
+{
+    width: 16px;
+    height: 16px;
+ /*   background-color: #F5F5F5;*/
+ 		background-color: transparent;
+}
+ 
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+ /*   background-color: #F5F5F5;*/
+ 		background-color: transparent;
+}
+ 
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-corner
+{
+		 border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color:transparent;
+}
+
+::-webkit-resizer
+{
+	border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:transparent;
+}
+#progress_loading_text {
+	font-size:2.5em;
+	margin-left:23px;
+	color:transparent;
+}
+
+
+#loadFailed_text_haupt {
+	font-size:2.5em;
+	margin-left:-21px;
+	color:#FFFFFF;
+}
+
+#loadFailed_div {
+	margin-top:118px;
+	margin-left:140px;
+}
+
+a:link {color:#ffffff;}
+a:visited {color:#ffffff;}
+
+#screen_loadFailed {
+	height:768px;
+	width:1024px;
+	background:url(../images/gen_bg_CloudPlayer2.png) no-repeat;	
+}
+
+#screen_audioplayer {
+	height:768px;
+	width:1024px;
+	background:url(../images/gen_bg_CloudPlayer2.png) no-repeat;
+}
+
+#preload {
+	display: none
+}
+
+#preload img {
+	height: 0; width: 0; border: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -30;
+}
+
+
+.button_repeat {
+	display:block;
+	height:75px;
+	width:75px;
+}
+
+.button_repeat_shuffle {
+	display:block;
+	height:47px;
+	width:123px;
+}
+
+#button_repeat_div {
+	position: absolute; 
+	left: 30px; 
+	top: 105px;
+}
+
+.repeat_normal_state {
+	background:url(../images/repeat_normal.png) no-repeat;
+}
+
+.repeat_normal_state:active {
+	background:url(../images/repeat_pressed.png) no-repeat;
+}
+
+.repeat_active_state {
+	background:url(../images/repeat_active_normal.png) no-repeat;
+}
+
+.repeat_active_state:active {
+	background:url(../images/repeat_active_pressed.png) no-repeat;
+}
+
+.repeat_normal_state_new {
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Repeat_Norm.png) no-repeat;
+}
+
+.repeat_active_state_new:active {
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Repeat_Press.png) no-repeat;
+}
+
+.repeat_active_state_new {
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Repeat_On.png) no-repeat;
+}
+
+.repeat_active_state_new:active {
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Repeat_Press.png) no-repeat;
+}
+
+.button_shuffle {
+	display:block;
+	height:75px;
+	width:75px;
+}
+
+#button_shuffle_div {
+	position: absolute; 
+	left: 415px; 
+	top: 105px;
+}
+
+.shuffle_normal_state {
+	background:url(../images/shuffle_normal.png) no-repeat;
+}
+
+.shuffle_normal_state:active {
+	background:url(../images/shuffle_pressed.png) no-repeat;
+}
+
+.shuffle_active_state {
+	background:url(../images/shuffle_active_normal.png) no-repeat;
+}
+
+.shuffle_active_state:active {
+	background:url(../images/shuffle_active_pressed.png) no-repeat;
+}
+
+.shuffle_normal_state_new {
+	left:900px;
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Random_Norm.png) no-repeat;
+}
+
+.shuffle_normal_state_new:active {
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Random_Press.png) no-repeat;
+}
+
+.shuffle_active_state_new {
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Random_On.png) no-repeat;
+}
+
+.shuffle_active_state_new:active {
+	background:url(../images/HMI_Assets/Bottom_Button/Icon_Random_Press.png) no-repeat;
+}
+
+/******************/
+/* Player Buttons */   
+/******************/
+#player_buttons {
+	position: absolute; 
+	left: 31px; 
+	top: 648px;
+	width:480px;
+}
+
+#button_backward_div {
+	float:left;
+	margin-right:13px;
+}
+
+.button_backward {
+	background:url(../images/backward_normal.png) no-repeat;
+}
+
+
+.button_backward:active {
+	background:url(../images/backward_pressed.png) no-repeat;
+}
+
+.button_backward_new {
+	background:url(../images/HMI_Assets/Buttons/But_Previous_Norm.png) no-repeat;
+}
+	
+
+.button_backward_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Previous_Press.png) no-repeat;
+}
+
+#button_forward_div {
+	float:left;
+}
+
+.button_forward {
+	background:url(../images/forward_normal.png) no-repeat;
+}
+
+
+.button_forward:active {
+	background:url(../images/forward_pressed.png) no-repeat;
+}
+
+.button_forward_new {
+	background:url(../images/HMI_Assets/Buttons/But_Next_Norm.png) no-repeat;
+}
+	
+
+.button_forward_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Next_Press.png) no-repeat;
+}
+
+
+.button_fwd_bwd {
+	display:block;
+	height:88px;
+	width:142px;
+}
+
+.button_fwd_bwd_new {
+	display:block;
+	height:85px;
+	width:85px;
+}
+
+.button_play_pause {
+	display:block;
+	height:88px;
+	width:151px;
+}
+
+.button_play_pause_new {
+	display:block;
+	height:78px;
+	width:122px;
+}
+
+
+#button_play_pause_div {
+	float:left;
+	margin-right:13px;
+}
+
+.play_state {
+	background:url(../images/play_normal.png) no-repeat;
+}
+
+.play_state:active {
+	background:url(../images/play_pressed.png) no-repeat;
+}
+
+.pause_state {
+	background:url(../images/pause_normal.png) no-repeat;
+}
+
+.pause_state:active {
+	background:url(../images/pause_pressed.png) no-repeat;
+}
+
+.play_state_new {
+	background:url(../images/HMI_Assets/Buttons/But_Play_Norm.png) no-repeat;
+}
+
+.play_state_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Play_Press.png) no-repeat;
+}
+
+.pause_state_new {
+	background:url(../images/HMI_Assets/Buttons/But_Pause_Norm.png) no-repeat;
+}
+
+.pause_state_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Pause_Press.png) no-repeat;
+}
+
+#button_row {
+	position:absolute;
+	left: 559px; 
+	top: 648px;
+        width:440px;
+}
+
+
+#button_row a {
+	color:#FFF;	
+	font-size:18px;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+}
+
+
+#button_row_background {
+        position:absolute;
+        left: 559px;
+        top: 102px;
+        width:440px;
+}
+
+#button_row_background a {
+	color:#FFF;	
+	font-size:18px;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:normal;
+}
+
+#button_background_set_div {
+        float:left;
+        margin-right:13px;
+	text-align:center;
+}
+
+.button_background_set {
+        background:url(../images/background_set_120x80_normal.png) no-repeat;
+}
+
+.button_background_set:active {
+        background:url(../images/background_set_120x80_pressed.png) no-repeat;
+}
+
+.button_background_set_new {
+        background:url(../images/HMI_Assets/Buttons/But_Themes_Norm.png) no-repeat;
+}
+
+.button_background_set_new:active {
+         background:url(../images/HMI_Assets/Buttons/But_Themes_Press.png) no-repeat;
+}
+
+#background_set_button_text {
+        height:60px;
+        width:100px;
+        margin-left:5px;
+        padding-top:30px;
+        position:absolute;
+}
+
+#background_set_button_text:active {
+}
+
+#button_background_choose_div {
+        float:left;
+        margin-right:13px;
+	text-align:center;
+}
+
+.button_background_choose {
+        background:url(../images/background_set_120x80_normal.png) no-repeat;
+}
+
+.button_background_choose:active {
+        background:url(../images/background_set_120x80_pressed.png) no-repeat;
+}
+
+.button_background_choose_new {
+	 background:url(../images/HMI_Assets/Buttons/But_SWUpgrade_Norm.png) no-repeat;
+}
+
+.button_background_choose_new:active {
+	 background:url(../images/HMI_Assets/Buttons/But_SWUpgrade_Press.png) no-repeat;
+}
+
+#background_select_button_text {
+	height:60px;
+        width:100px;
+        margin-left:5px;
+        padding-top:30px;
+        position:absolute;
+}
+
+#background_select_button_text:active{
+/*	 padding-top:15px;*/
+}
+
+#button_song_lyrics_show_div {
+        float:left;
+	text-align:center;
+}
+
+.button_song_lyrics_show {
+        background:url(../images/background_set_120x80_normal.png) no-repeat;
+}
+
+.button_song_lyrics_show:active {
+        background:url(../images/background_set_120x80_pressed.png) no-repeat;
+}
+
+.button_song_lyrics_show_new {
+	background:url(../images/HMI_Assets/Buttons/But_Lyrics_Norm_uidj4527.png) no-repeat;
+}
+
+.button_song_lyrics_show_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Lyrics_Press_uidj4527.png) no-repeat;
+}
+
+.button_bg_dis {
+	display:block;
+	height:80px;
+	width:120px;
+}
+
+#song_lyrics_show_button_text {
+	height:60px;
+        width:100px;
+        margin-left:5px;
+        padding-top:30px;
+        position:absolute;
+}
+#song_lyrics_show_button_text:active {
+	padding-top:25px;
+}
+#textbox_song_lyrics {
+        position: absolute;
+        left: 30px;
+        top: 380px;
+/*        background:url(../images/song_lyrics_bg.png) no-repeat;*/
+}
+.textbox_song_lyrics_dis {
+	display:block;
+	height:160px;
+	width:436px;
+	
+}
+
+
+
+.textbox_song_lyrics_dis_new {
+	display:block;
+	height:160px;
+	width:300px;
+}
+#song_lyrics_text{
+	display:block;
+	height:160px;
+	width:436px;
+	overflow:auto;
+	background-color:transparent;
+	border:0px;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	font-size:18px;
+	color:#ffffff;	
+
+}
+
+
+/* SOURCE BUTTON */
+#button_source_div {
+	float:left;
+	padding-right:14px;
+	margin-left:1px;
+}
+
+.button_source {
+	display:block;
+	height:91px;
+	width:142px;
+}
+
+.button_source_new {
+	background:url(../images/HMI_Assets/Buttons/But_Media_Norm.png) no-repeat;
+}
+
+.button_source_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Media_Press.png) no-repeat;
+}
+
+.source_type_internal_storage {
+	background:url(../images/source_internal_storage_normal.png) no-repeat;
+}
+
+.source_type_internal_storage:active {
+	background:url(../images/source_internal_storage_pressed.png) no-repeat;
+}
+
+.source_type_usb {
+	background:url(../images/source_usb_normal.png) no-repeat;
+}
+
+.source_type_usb:active {
+	background:url(../images/source_usb_pressed.png) no-repeat;
+}
+
+.source_type_sdcard {
+	background:url(../images/source_sdcard_normal.png) no-repeat;
+}
+
+.source_type_sdcard:active {
+	background:url(../images/source_sdcard_pressed.png) no-repeat;
+}
+
+.source_type_bluetooth {
+	background:url(../images/source_bluetooth_normal.png) no-repeat;
+}
+
+.source_type_bluetooth:active {
+	background:url(../images/source_bluetooth_pressed.png) no-repeat;
+}
+
+.source_type_cd {
+	background:url(../images/source_cd_normal.png) no-repeat;
+}
+
+.source_type_cd:active {
+	background:url(../images/source_cd_pressed.png) no-repeat;
+}
+
+#source_button_text {
+    height: 38px;
+    margin-left: 0px;
+    padding-top: 53px;
+	padding-left: 32px;
+    position:absolute;
+    width: 138px;
+}
+
+
+#source_button_text:active {
+	padding-top: 54px;
+}
+
+/* BROWSE BUTTON */
+#button_browse_div {
+	text-align:center;
+	padding-right:28px;
+	float:left;
+}
+
+.button_browse {
+	display:block;
+	height:91px;
+	width:142px;
+    background:url(../images/browse_normal.png) no-repeat;
+}
+
+.button_browse:active {
+	background:url(../images/browse_pressed.png) no-repeat;
+}
+
+.button_roundStyle {
+	display:block;
+
+	height:110px;
+	width:96px;
+}
+
+.button_browse_new {
+	background:url(../images/HMI_Assets/Buttons/But_Browse_Norm_uidj4527.png) no-repeat;
+}
+
+.button_browse_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Browse_Press_uidj4527.png) no-repeat;
+}
+
+#browse_button_text {
+    height: 38px;
+    margin-left: 4px;
+    padding-top: 53px;
+    position:absolute;
+    width: 138px;
+}
+
+#browse_button_text:active {
+	padding-top: 54px;
+}
+
+/* SETTINGS BUTTON */
+#button_settings_div {
+	float:left;
+	text-align:center;
+}
+
+.button_settings {
+	display:block;
+	height:91px;
+	width:109px;
+    background:url(../images/settings_normal.png) no-repeat;
+}
+
+.button_settings:active {
+	background:url(../images/settings_pressed.png) no-repeat;
+}
+
+.button_settings_new {
+	background:url(../images/HMI_Assets/Buttons/But_Setting_Norm.png) no-repeat;
+}
+
+.button_settings_new:active {
+	background:url(../images/HMI_Assets/Buttons/But_Setting_Press.png) no-repeat;
+}
+
+#settings_button_text {
+    height: 38px;
+    margin-left: 4px;
+    padding-top: 53px;
+    position:absolute;
+    width: 100px;
+}
+
+#settings_button_text:active {
+    padding-top: 54px;
+}
+
+
+/*************************************/
+/* jQuery Mobile overrides 			 */
+/*************************************/
+.ui-body-c, .ui-overlay-c {
+	text-shadow:none;
+	background-color:#000000;
+}
+
+body {
+	text-shadow:none;
+	background-color:#000000;
+	overflow-x: hidden;
+	height: 99.9%;	
+}
+
+/****************************************/
+/*		Tracklist 						*/
+/****************************************/
+
+#tracklist_containter {
+	position: absolute; 
+	left: 555px; 
+        top: 202px;
+}
+
+#tracklist_header {
+	height:80px;
+	width:443px;
+	background:url(../images/gen_list_header_bg_new.png) no-repeat;
+	text-align:center;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	font-size:42px;
+	color:#ffffff;
+	line-height:200%;
+}
+
+#wrapper {
+	/*overflow:auto;*/
+	position:absolute; /*z-index:1;*/
+	width:436px;
+        height:332px;
+	background:url(../images/gen_list_bg.png) no-repeat;
+	margin-left: 4px;
+}
+
+.scroller {
+	position:absolute; z-index:0;
+        width:435px;
+}
+
+.list_text_entry {
+	font-size:36px;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	color:#1d4654;
+	margin-left: 12px;
+}
+
+
+
+#wrapper ol li, #genrelist_wrapper ul ol li, #artistlist_wrapper ul ol li, #albumlist_wrapper ul ol li, #tracklist_wrapper ul li {
+	/*list-style-type: decimal-leading-zero;*/
+	/*list-style-position: inside;*/
+	padding-top:12px;
+	padding-bottom:5px;
+	font-size:36px;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	color:#3699b9;
+	border-bottom:6px solid #1b6884;
+	padding-left:15px;
+	margin-left:1px;
+	margin-right:1px;
+	height:52px;
+	margin-top:-3px;
+	width:418px;
+	/*background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#FFFFFF), to(#D4D4D4), color-stop(.9,#C7C6C6));*/
+}
+
+#genrelist_wrapper ul ol li, #artistlist_wrapper ul ol li, #albumlist_wrapper ul ol li, #tracklist_wrapper ul li {
+	width:419px;
+}
+
+#tracklist_wrapper ul li {
+	margin-right: 5px;
+	margin-left:3px;
+}
+
+#wrapper ol, #genrelist_wrapper ol ul, #artistlist_wrapper ul ol li, #albumlist_wrapper ul ol li, #tracklist_wrapper ul ol li {
+	margin-left: -39px;
+	margin-top:1px;
+}
+
+#wrapper ol {
+	margin-left: -39px;
+	margin-top:4px;
+}
+
+.bottom_line {
+	border-bottom:1px solid #92897d;
+}
+
+
+.myScrollbarV {
+	position:absolute;
+	z-index:0;
+	width:10px;
+	bottom:7px;
+	top:2px;
+	right:0px;
+}
+
+.myScrollbarV > div {
+position:absolute;
+	z-index:100;
+	width:100%;
+
+	/* The following is probably what you want to customize */
+	background:-webkit-gradient(linear, 0 0, 100% 0, from(#14ccf4), to(#14ccf4));
+	background-image:-moz-linear-gradient(top, #14ccf4, #14ccf4);
+	background-image:-o-linear-gradient(top, #14ccf4, #14ccf4);
+
+	border:1px solid #14ccf4;
+
+	-webkit-background-clip:padding-box;
+	-moz-background-clip:padding-box;
+	-o-background-clip:padding-box;
+	background-clip:padding-box;
+	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	
+	-webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+	-o-box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+	box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+}
+
+
+.listItem:active {
+	background:url(../images/gen_list_cursor_normal.png) no-repeat;
+	width:418px;
+}
+
+.listItem {
+	width:418px;
+}
+
+
+.playing_icon {
+	float:right;
+	background:url(../images/gen_list_ico_speaker.png) no-repeat;
+	width:45px;
+	height:39px;
+	margin-top:5px;
+	margin-right:33px;
+}
+
+.playing {
+	background:url(../images/gen_list_cursor_normal.png) no-repeat;
+	width:440px;
+	height:41px;
+	margin-top:-3px;
+}
+
+#player_infos {
+	position: absolute; 
+	left: 40px; 
+	top: 383px;
+	width: 450px;	
+}
+
+.centered {
+	text-align:center;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+}
+
+#player_info_artist, #player_info_album {
+	font-size:36px;
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	color:#ffffff;
+}
+
+#player_info_title {
+	font-size:48px;
+	color:#ffffff;
+}
+
+
+
+
+#statusbar {
+	/*ckground:url(../images/gen_status_bar.png) no-repeat;*/
+	height:80px;
+}
+
+/*******************/
+/* HOME BUTTON     */
+/*******************/
+#button_home_div {
+	position: absolute; 
+	left: 934px; 
+	top: 7px;
+}
+
+.button_home {
+	display:block;
+	height:65px;
+	width:65px;
+}
+
+.home_normal_state {
+	background:url(../images/home_button_normal.png) no-repeat;
+}
+
+.home_normal_state:active {
+	background:url(../images/home_button_pressed.png) no-repeat;
+}
+
+
+
+#player_info_cd_cover_bg {
+	position: absolute; 
+	left: 105px; 
+	top: 79px; 
+	width: 320px; 
+	height: 320px; 
+	background-image: url("../images/player_info_cd_cover_bg.png");
+}
+
+#player_info_cd_cover {
+	position: absolute;
+	left: 138px;
+	top: 109px;
+	width: 245px;
+	height: 245px;
+	background: url("../images/cover/player_info_cd_cover.png") repeat scroll 0 0;
+	background-size:102%;
+	text-align:center;
+}
+
+#gutter {
+	right: 90px;
+	position: absolute;
+	top: 19px;
+	left: 50px;
+	height: 6px;
+	padding: 2px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 4px rgba(20, 30, 40, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
+	box-shadow: 0 1px 4px rgba(20, 30, 40, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
+}
+
+#handle {
+position: absolute;
+top: -5px;
+left: 0;
+width: 20px;
+height: 20px;
+margin-left: -10px;
+background: url("../images/player_slider_knob_normal.png") no-repeat -65px -5px;
+cursor: pointer;
+}
+
+
+.image_loader_icon {	
+	margin-top:30px;
+}
+
+.ui-slider-handle .ui-state-default .ui-corner-all {
+	top: -1.3em;
+	margin-left: -.6em;
+	position: absolute;
+	z-index: 2;
+	width: 4.2em;
+	height: 4.2em;
+	cursor: default;
+}
+
+.ui-state-default {
+	border: none;
+	background: url(../images/player_slider_knob_normal.png);
+}
+
+
+
+/* jQuery mobile slider overrides */
+input.ui-slider-input {
+    display:none !important;
+}
+
+
+.jqx-slider-slider {
+	background: url(../images/player_slider_knob_normal.png) no-repeat scroll 50% 50%;
+	border-style:none;
+	height:70px;
+	width:70px;
+	margin-left:-15px;
+	margin-top:-27px;
+}
+
+
+
+
+.ui-focus, .ui-btn:focus {
+    box-shadow: 3px 1px 10px 20px #864f00;
+}
+
+
+div.ui-slider-bg {
+	background: #cc7a00;
+}
+
+
+#audio_slider {
+	margin-top:486px;
+	width:462px;
+	margin-left:31px;
+}
+
+#timestamp {
+	margin-top: 1em;
+	color:#FFF;
+	font-size:24px;
+	font-family:"Myriad Pro";
+	font-weight:lighter;
+}
+
+
+#timestamp_current {
+	float:left;
+	margin-top: -6px;
+}
+
+#timestamp_max {
+	float:right;
+	margin-top: -6px;
+}
+
+
+/* SOURCE POPUP WINDOW */
+#source_popup_window {
+		background: url("../images/source_popup_bg.png") no-repeat;
+		width:380px;
+		height:415px;
+		position:absolute;
+		left:442px;
+		top:248px;
+		z-index:1;
+}
+
+.source_active_state {
+	background: url("../images/gen_popup_cursor_350_normal.png") no-repeat;
+	color:#21647a;
+}
+
+.source_normal_state {
+	color:#1d4654;
+}
+
+#source_popup_window ul {
+	list-style:none;
+	margin-left:-23px;
+	width:342px;
+}
+
+#source_popup_window li {
+	font-family:"Myriad Pro Light", "Myriad ProLight", "Myriad Pro";
+	font-weight:lighter;
+	font-size:36px;
+	padding-top:11px;
+	padding-bottom:11px;
+	height:49px;
+}
+
+
+#item_internal_storage  {
+	/*background:#00235a;*/
+}
+
+#source_popup_window li.disabled {
+	color:#b7b7b7;
+}
+
+#source_popup_window li.bottom_line {
+	border-bottom:1px solid #17627b;
+}
+
+#source_popup_window ul li img {
+	vertical-align:middle;
+	padding-left:15px;
+	padding-right:10px;
+}
+
+#source_image_storage {
+	margin-left:-5px;
+	margin-top:-3px;
+	margin-right:7px;
+}
+
+#source_image_usb {
+	margin-left:7px;
+	margin-right:14px;
+	margin-top:-3px;
+}
+
+#source_image_bluetooth {
+	margin-left:6px;
+}
+
+#source_image_sd {
+	margin-left:2px;
+	margin-right:12px;
+	margin-top:-2px;
+}
+
+#source_image_cd {
+	margin-top:-2px;
+	margin-left:-3px;
+	margin-right:7px;
+}
+
+#source_image_cloud {
+	margin-top:-8px;	
+	margin-left:-1px;
+	margin-right:5px;
+}
+
+
+.withCursor {
+	/*background: url("../images/cursor.png") no-repeat;*/
+}
+
+
+#streaming_div {
+	background:	url("../images/player_cloud_animation_disabled.png") no-repeat;
+	position:absolute;
+	left:186px;
+	top:618px;
+	height:30px;
+	width:148px;
+}
+
+
+/********* LIST */
+ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:40px; /* Remove the default left margin */ 
+}
+
+ol > li:before {
+    content:counter(li, decimal-leading-zero); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    color:#3699b9;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}

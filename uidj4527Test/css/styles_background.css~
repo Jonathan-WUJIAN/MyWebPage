@@ -1,0 +1,13 @@
+#screen_browser {
+
+	background:url(../images/gen_bg_CloudPlayer2.png) no-repeat;
+
+	height:768px;
+
+	width:1024px;
+
+}
+
+#shadowBackground{
+	z-index: 2;
+}
