@@ -495,7 +495,9 @@ function preloadAllImages () {
 
 	    'images/background_set_120x80_pressed_uidj4527.png',
 	    
-	    'images/fushi_mountain.png']).preloadImages(function(){
+	    'images/fushi_mountain.jpg',
+	    
+	    'images/chrismas_uidj4527.jpg']).preloadImages(function(){
 
             // all images are pre loaded
 
@@ -815,11 +817,11 @@ $(document).ready(function() {
 
 			 if (selectedSourceID=="item_Cloud") {
 
-				 /*isCloudBrowsingActive = 1;  // cloud mode enabled
+				 isCloudBrowsingActive = 1;  // cloud mode enabled
 
 				 localStorage.setItem(PLAYMODE, PLAYMODE_CLOUD);
 
-				 activateSource__Cloud();*/
+				 activateSource__Cloud();
 
 			 }
 
@@ -1477,7 +1479,7 @@ function updatePlayingContext() {
 	durationSet = false;
 
 
-
+		console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!updatePlayingContext called!!!!!!!!!!!!!!!!!!!");
 	  if(jsonData.length>0 && playedIndex != playingIndex)
 
 	  {
@@ -2042,14 +2044,15 @@ function background_set_clicked(){
         another_theme = 1;
         recover_default_theme  = 0;
 //		$("#screen_audioplayer").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/fushi_mountain.png)");
-			$("#screen_audioplayer").css("background-image","url(../images/fushi_mountain.png)");
+			$("#screen_audioplayer").css("background-image","url(../images/fushi_mountain.jpg)");
 //		$("#tracklist_containter").remove();
 /*		$("#screen_loadFailed").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/fushi_mountain.png)");
 		$("#screen_browser").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/fushi_mountain.png)");
 		$("#screen_settings").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/fushi_mountain.png)");*/
-		$("#screen_loadFailed").css("background-image","url(../images/fushi_mountain.png)");
-		$("#screen_browser").css("background-image","url(../images/fushi_mountain.png)");
-		$("#screen_settings").css("background-image","url(../images/fushi_mountain.png)");
+		$("#screen_loadFailed").css("background-image","url(../images/fushi_mountain.jpg)");
+		$("#screen_browser").css("background-image","url(../images/fushi_mountain.jpg)");
+		$("#screen_settings").css("background-image","url(../images/fushi_mountain.jpg)");
+		 $("#song_lyrics_text").css("color","#000000");
 
 		$("#update_popup_window").css("top","480px");
 	
@@ -2360,9 +2363,12 @@ function update_confirm_clicked(){
 /*	$("#screen_audioplayer").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/chrismas_uidj4527.png)");
 	$("#screen_loadFailed").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/chrismas_uidj4527.png)");
 	$("#screen_audioplayer").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/chrismas_uidj4527.png)");*/
-	$("#screen_audioplayer").css("background-image","url(../images/chrismas_uidj4527.png)");
-	$("#screen_loadFailed").css("background-image","url(../images/chrismas_uidj4527.png)");
-	$("#screen_audioplayer").css("background-image","url(../images/chrismas_uidj4527.png)");
+//	$("#screen_audioplayer").css("background-image","url(../images/chrismas_uidj4527.png)");
+	$("#screen_audioplayer").css("background-image","url(../images/chrismas_uidj4527.jpg)");
+//	$("#screen_loadFailed").css("background-image","url(../images/chrismas_uidj4527.png)");
+//	$("#screen_audioplayer").css("background-image","url(../images/chrismas_uidj4527.png)");
+	$("#screen_loadFailed").css("background-image","url(../images/chrismas_uidj4527.jpg)");
+	$("#screen_audioplayer").css("background-image","url(../images/chrismas_uidj4527.jpg)");
 	$("#update_popup_window").css("top","284px");
 
 	$("#player_buttons").css({"left":"680px","width":"340px","top":"648px"});
@@ -2477,7 +2483,8 @@ function update_confirm_clicked(){
 //	$(".source_active_state").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/gen_popup_cursor_350_normal_uidj4527.png)");
 //	$("#streaming_div").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/player_cloud_animation_disabled_uidj4527.png)");
 //	$("#screen_browser").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/chrismas_uidj4527.png)");
-		$("#screen_browser").css("background-image","url(../images/chrismas_uidj4527.png)");
+//		$("#screen_browser").css("background-image","url(../images/chrismas_uidj4527.png)");
+	$("#screen_browser").css("background-image","url(../images/chrismas_uidj4527.jpg)");
 //	$("#backgroundListHeader").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/gen_list_header_bg_new_uidj4527.png)");
 //	$("#genrelist_wrapper, #artistlist_wrapper, #albumlist_wrapper, #tracklist_wrapper").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/gen_list_bg_uidj4527.png)");
 //	$("#albumListHeader, #trackListHeader, #artistListHeader, #genreListHeader").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/gen_list_header_bg_new_uidj4527.png)");
@@ -2545,7 +2552,8 @@ function update_confirm_clicked(){
 //	$(".trackListItem:active").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/gen_list_cursor_normal_tracklist_uidj4527.png)");
 //	$(".selectedItem").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/gen_list_cursor_normal__uidj4527.png)");
 //	$("#screen_settings").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/chrismas_uidj4527.png)");
-		$("#screen_settings").css("background-image","url(../images/chrismas_uidj4527.png)");
+//		$("#screen_settings").css("background-image","url(../images/chrismas_uidj4527.png)");
+$("#screen_settings").css("background-image","url(../images/chrismas_uidj4527.jpg)");
 /*	$(".uidj4527_test1_class, .uidj4527_test2_class").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/background_set_120x80_normal_uidj4527.png)");
 	$(".uidj4527_test1_class:active").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/background_set_120x80_pressed_uidj4527.png)");
 	$(".uidj4527_test2_class:active").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/background_set_120x80_pressed_uidj4527.png)");*/
