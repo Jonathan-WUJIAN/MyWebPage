@@ -2037,7 +2037,7 @@ function background_set_clicked(){
 	first_theme = 0;
     new_theme_selected = 0;
     button_theme_clicked = 1;
-    $(#song_lyrics_text).css("color","#ffffff");
+    $("#song_lyrics_text").css("color","#ffffff");
 	if(changeMainWindowBackground == 1){
         another_theme = 1;
         recover_default_theme  = 0;
@@ -2354,7 +2354,7 @@ function update_confirm_clicked(){
 	$("#player_info_artist").show();
   $("#player_info_album").show();
   $("#player_info_title").show();
-  $(#song_lyrics_text).css("color","#000000");
+  $("#song_lyrics_text").css("color","#000000");
 
 //	$("#tracklist_containter").remove();
 /*	$("#screen_audioplayer").css("background-image","url(/usr/bin/OIP_REF_HMI/ORH_HMI/HMI_Cloudplayer/uidj4527Test/images/chrismas_uidj4527.png)");

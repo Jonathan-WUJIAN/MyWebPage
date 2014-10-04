@@ -39,6 +39,7 @@ Exemple
    }
 
 */
+echo "What the fuck?";
 
 class ID3{
 

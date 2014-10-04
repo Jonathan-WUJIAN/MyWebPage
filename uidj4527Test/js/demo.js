@@ -485,9 +485,6 @@ function preloadAllImages () {
 	   'images/background_set_120x80_normal_uidj4527.png',
 
 	   'images/background_set_120x80_pressed_uidj4527.png',
-	   
-	   'images/song_lyrics_300x300_bg.png',
-	
 
 	   'images/song_lyrics_bg_uidj4527.png',
 
